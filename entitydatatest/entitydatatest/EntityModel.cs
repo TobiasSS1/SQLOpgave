@@ -10,6 +10,7 @@ namespace entitydatatest
         public EntityModel()
             : base("name=EntityModel")
         {
+            var test = from h in Blogs select h;
         }
 
         public virtual DbSet<Blogs> Blogs { get; set; }
@@ -17,6 +18,7 @@ namespace entitydatatest
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+
         }
     }
 }
