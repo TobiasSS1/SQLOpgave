@@ -47,7 +47,9 @@ namespace entitydatatest
         {
             using (var db = new EntityModel())
             {
-                Console.WriteLine("Enter a name for a new Blog: ");
+
+
+                    Console.WriteLine("Enter a name for a new Blog: ");
                 var name = Console.ReadLine();
 
                 var blog = new Blogs { Name = name };
